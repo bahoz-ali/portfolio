@@ -8,17 +8,21 @@ body {
   background-color: white;
 }
 
-@media (max-width: 380px) {
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 24px;
-    height: 30px;
+    height: 0 30px;
   }
 
   .logo {
-    font-family: "Poppins" Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -31,5 +35,56 @@ body {
     font-weight: 800;
     color: var(--primaryColor);
     cursor: pointer;
+  }
+
+  .hero {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    padding: 100px 24px 24px 24px;
+    min-width: 327px;
+    background-image: url("/images/mobile.png");
+    width: 100vw;
+    height: 718px;
+    overflow: hidden;
+  }
+
+  .hero .hero__title {
+    width: 100%;
+  }
+
+  .header .hero .hero__title h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .header .hero .hero__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 12px 0 12px 0;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .hero .hero__connect {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7f8cff;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    padding: 0;
   }
 }
