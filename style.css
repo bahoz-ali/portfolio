@@ -48,7 +48,6 @@ body {
     background-image: url("/images/mobile.png");
     width: 100vw;
     height: 718px;
-    overflow: hidden;
   }
 
   .hero .hero__title {
@@ -59,7 +58,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
-    font-family: "Poppins";
+    font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -68,7 +67,7 @@ body {
   }
 
   .header .hero .hero__text {
-    font-family: "Poppins";
+    font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -78,7 +77,7 @@ body {
   }
 
   .hero .hero__connect {
-    font-family: "Poppins";
+    font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
