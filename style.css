@@ -35,6 +35,8 @@ body {
     font-weight: 800;
     color: var(--primaryColor);
     cursor: pointer;
+    background-color: red;
+    font-size: 20px;
   }
 
   .hero {
@@ -70,7 +72,7 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     margin: 12px 0 12px 0;
     line-height: 24px;
     color: #344563;
@@ -85,5 +87,17 @@ body {
     text-transform: uppercase;
     margin: 0 0 12px 0;
     padding: 0;
+  }
+
+  .social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-icons .social-icon:not(:last-child) {
+    margin-right: 20px;
   }
 }

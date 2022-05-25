@@ -1,56 +1,40 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> Description the project.
+> this project about simple portfolio. 
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- just Html and Css
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+-sorry, its not available yet 
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**this project is all about creating a nice portfolio**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- make sure that you installed vscode.
 ### Setup
-
-### Install
+- clone the project using git clone [url of the project]
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
+just open the project into the vscode.
 
 ## Authors
 
-👤 **Author1**
+👤 **Bahoz Ali**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/bahoz-ali)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bahoz-ali/)
 
 ## 🤝 Contributing
 
