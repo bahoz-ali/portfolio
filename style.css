@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,9 +46,9 @@ body {
     justify-content: baseline;
     align-items: flex-start;
     padding: 100px 24px 24px 24px;
-    min-width: 327px;
     background-image: url("/images/mobile.png");
-    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 718px;
   }
 
