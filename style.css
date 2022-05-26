@@ -40,6 +40,13 @@ body {
     cursor: pointer;
   }
 
+  .hero.hero--bg-img {
+    background-image: url("/images/mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 718px;
+  }
+
   .hero {
     overflow: hidden;
     display: flex;
@@ -47,17 +54,13 @@ body {
     justify-content: baseline;
     align-items: flex-start;
     padding: 100px 24px 24px 24px;
-    background-image: url("/images/mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 718px;
   }
 
   .hero .hero__title {
     width: 100%;
   }
 
-  .header .hero .hero__title h1 {
+  .hero .hero__title h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
@@ -69,7 +72,7 @@ body {
     color: var(--headerColor);
   }
 
-  .header .hero .hero__text {
+  .hero .hero__text {
     font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -133,7 +136,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 8px 0;
+    padding: 8px 0 20px 0;
   }
 
   .work__info .circle {
@@ -204,5 +207,17 @@ body {
     background: #6070ff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     cursor: pointer;
+  }
+
+  /* *--------------------- About Section ----------------- */
+  .about-section {
+    padding-top: 100px;
+    margin-top: 0;
+    background-color: #e5e5e5;
+  }
+
+  .about-section .hero {
+    border-radius: 0 100px 0 0;
+    background-color: #fff;
   }
 }
