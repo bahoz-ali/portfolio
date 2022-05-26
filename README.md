@@ -2,17 +2,12 @@
 
 # Portfolio
 
-> this project about simple portfolio. 
+> This project is about simple portfolio. 
 
 
 ## Built With
 
-- just Html and Css
-
-## Live Demo (if available)
-
--sorry, its not available yet 
-
+- just HTML and CSS
 
 ## Getting Started
 
@@ -22,12 +17,12 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-- make sure that you installed vscode.
+- Make sure that you installed vscode.
 ### Setup
-- clone the project using git clone [url of the project]
+- Clone the project using: `git clone git@github.com:bahoz-ali/portfolio.git`
 
 ### Usage
-just open the project into the vscode.
+Just open the project into the vscode.
 
 ## Authors
 
