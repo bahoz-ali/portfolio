@@ -220,4 +220,78 @@ body {
     border-radius: 0 100px 0 0;
     background-color: #fff;
   }
+
+  /* ------------ category skills in about section ---------- */
+
+  .category-list {
+    list-style: none;
+    padding: 0 24px 100px 24px;
+    margin: 0 0;
+    background-color: #fff;
+  }
+
+  .category-item {
+    padding: 24px 12px;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .category__header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .category-item .category__header .title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .skill-list {
+    display: none;
+  }
+
+  .category-item--open .skill-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0 0;
+  }
+
+  /* when category is open then it's border well be removed */
+  .category-item.category-item--open {
+    border: none;
+  }
+
+  .category-item--open .category__header .chevron {
+    transform: rotate(90deg);
+  }
+
+  .skill-list .skill-item {
+    background: #f7f7f9;
+    border-radius: 4px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .skill-list > .skill-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .skill-item .skill__icon {
+    object-fit: contain;
+    margin-right: 15px;
+  }
+
+  .skill-item .skill__name {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #253858;
+  }
 }
