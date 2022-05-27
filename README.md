@@ -7,7 +7,7 @@
 
 ## Built With
 
-- just HTML and CSS
+- Just HTML and CSS
 
 ## Getting Started
 
