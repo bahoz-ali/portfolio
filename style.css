@@ -179,13 +179,13 @@ body {
 
   .work .work__usage {
     list-style: none;
-    display: flex;
     margin: 12px 0;
     padding: 0;
   }
 
   .work .work__usage .usage_item {
     padding: 4px 12px;
+    float: left;
     margin: 0 8px 0 0;
     background-color: #ebebff;
     color: var(--primaryColor);
