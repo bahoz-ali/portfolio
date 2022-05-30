@@ -179,7 +179,7 @@ body {
 
   .work .work__usage {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     margin: 12px 0;
     padding: 0;
   }
@@ -187,6 +187,7 @@ body {
   .work .work__usage .usage_item {
     padding: 4px 12px;
     margin: 0 8px 0 0;
+    float: left;
     background-color: #ebebff;
     color: var(--primaryColor);
     border-radius: 8px;
