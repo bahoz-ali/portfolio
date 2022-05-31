@@ -302,4 +302,10 @@ body {
     font-size: 15px;
     color: #253858;
   }
+
+  /* --------------------- contact section ------------------ */
+  textarea{
+    padding: 40px;
+    width: 90%;
+  }  
 }
