@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   /** ---------------- Header Section -------------------  */
   .navbar {
     display: flex;
@@ -125,6 +125,14 @@ body {
   /* its used to margin between work cars with out the lsat one */
   .work-section > :not(:last-child) {
     margin-bottom: 88px;
+  }
+
+  .work .work__img {
+    width: 100%;
+  }
+
+  .work .work__img img {
+    object-fit: cover;
   }
 
   .work .work__title .title {
@@ -370,6 +378,7 @@ body {
     border: 1px solid #cfd8dc;
     color: #172b4d;
     font-size: 15px;
+    font-family: "Poppins", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
