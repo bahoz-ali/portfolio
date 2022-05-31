@@ -304,8 +304,81 @@ body {
   }
 
   /* --------------------- contact section ------------------ */
-  textarea{
-    padding: 40px;
-    width: 90%;
-  }  
+  .contact-section {
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .contact {
+    background-color: var(--primaryColor);
+    background-image: url("/images/contact_bg.png");
+    background-position: 105% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 70px;
+    margin: 0;
+    padding: 100px 24px 40px 24px;
+  }
+
+  .contact .contact__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .contact .contact__header .header__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .contact__header .header__text {
+    text-align: center;
+    color: #ebebff;
+    margin: 12px 0 0 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form .input {
+    border-radius: 8px;
+    border: 0;
+    border: 1px solid #cfd8dc;
+    color: #172b4d;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    outline: none;
+    padding: 12px 38px 15px 14px;
+    width: 100%;
+  }
+
+  .contact-form .message {
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    color: #172b4d;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    outline: none;
+    padding: 15px 40px 15px 15px;
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    color: #6070FF;
+    margin-top: 25px;
+  }
 }
