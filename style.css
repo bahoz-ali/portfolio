@@ -321,6 +321,8 @@ body {
     border-top-left-radius: 70px;
     margin: 0;
     padding: 100px 24px 40px 24px;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact .contact__header {
@@ -355,7 +357,6 @@ body {
     border: 0;
     border: 1px solid #cfd8dc;
     color: #172b4d;
-    font-family: "Poppins";
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -378,7 +379,12 @@ body {
   }
 
   .contact-form .btn {
-    color: #6070FF;
+    color: var(--primaryColor);
     margin-top: 25px;
+  }
+
+  .contact-form .btn:hover {
+    background-color: var(--primaryColor);
+    color: #fff;
   }
 }
