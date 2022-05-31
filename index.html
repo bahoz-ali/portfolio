@@ -305,6 +305,8 @@
         <form class="contact-form" action="">
           <div class="input-container">
             <input
+              maxlength="30"
+              required
               class="input"
               type="text"
               name="name"
@@ -315,6 +317,7 @@
 
           <div class="input-container">
             <input
+              required
               class="input"
               type="email"
               name="email"
@@ -324,6 +327,8 @@
           </div>
 
           <textarea
+          maxlength="500"
+          required
           class="message"
             name="message"
             id="message"
