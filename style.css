@@ -207,7 +207,7 @@ body {
   color: #396df2;
   border-radius: 8px;
   font-family: "Poppins", "Courier New", Courier, monospace;
-  transition: all 0.4s linear, color 0.2s linear;
+  transition: all 0.5s linear, color 0.2s linear;
 }
 
 .btn:hover {
