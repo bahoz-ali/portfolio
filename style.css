@@ -16,6 +16,13 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #344563;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 /** ---------------- Header Section -------------------  */
 .navbar {
   display: flex;
@@ -37,6 +44,10 @@ body {
 
 .navbar img {
   cursor: pointer;
+}
+
+.nav-list {
+  display: none;
 }
 
 .hero.hero--bg-img {
@@ -102,6 +113,24 @@ body {
 
 .social-icons .social-icon:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 25px 7%;
+    margin: 0;
+  }
+
+  .navbar img {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    column-gap: 30px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /* *---------------- Work Section -------------------  */
