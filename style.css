@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+img {
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px -6px 22px -1px rgba(0, 0, 0, 0.4);
+}
 
 :root {
   --primaryColor: #6070ff;
@@ -207,7 +219,7 @@ body {
   color: #396df2;
   border-radius: 8px;
   font-family: "Poppins", "Courier New", Courier, monospace;
-  transition: all 0.4s linear, color 0.2s linear;
+  transition: all 0.5s linear, color 0.2s linear;
 }
 
 .btn:hover {
