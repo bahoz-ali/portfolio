@@ -377,6 +377,10 @@ a {
   border: none;
 }
 
+.chevron {
+  cursor: pointer;
+}
+
 .category-item--open .category__header .chevron {
   transform: rotate(90deg);
 }
