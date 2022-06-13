@@ -36,7 +36,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  position: relative;
   padding: 0 8%;
 }
 
@@ -62,16 +61,28 @@ a {
   display: none;
 }
 
-.nav-list.nav--open{
+.nav-list.nav--open {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  background-color: yellow;
+  background-color: #6070ffce;
   position: absolute;
-  padding: 5px 3px;
-  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 100px 0 0 30px;
+  margin: 0;
 }
 
+.nav-list.nav--open .nav__item a {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+}
+.nav-list.nav--open .nav__item a:hover {
+  border-bottom: 3px solid #fff; 
+}
 .nav-list .nav__item a {
   border: 3px solid transparent;
   transition: all 0.5s linear;
