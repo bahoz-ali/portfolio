@@ -35,8 +35,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 24px;
-  height: 0 30px;
+  margin: 0;
+  padding: 0 8%;
 }
 
 .logo {
@@ -133,8 +133,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
   .navbar {
-    padding: 25px 7%;
+    padding: 15px 7%;
     margin: 0;
   }
 
@@ -146,6 +150,8 @@ a {
     display: flex;
     column-gap: 30px;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .header {
@@ -164,6 +170,7 @@ a {
     background-image: url("images/larg_bg@2x.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center 60px;
     height: auto;
   }
 
@@ -196,6 +203,13 @@ a {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: 0 auto;
+  transition: all 0.4s linear;
+  border: 2px solid transparent;
+}
+
+.work:hover {
+  border: 2px solid #a7aeff;
+  box-shadow: 5px 10px 29px 0 rgba(77, 61, 255, 0.2);
 }
 
 .work .work__img img {
@@ -309,7 +323,7 @@ a {
     max-width: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
     column-gap: 2rem;
   }
 
