@@ -53,7 +53,7 @@ a {
   cursor: pointer;
 }
 
-.menu.menu--close{
+.menu.menu--close {
   display: none;
 }
 
@@ -63,6 +63,7 @@ a {
 
 .bi-x-lg.xopen {
   display: block;
+  font-size: 20px;
   color: white;
   z-index: 999;
   cursor: pointer;
@@ -77,8 +78,8 @@ a {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  background-color: #6070ffce;
-  backdrop-filter: blur(4px);
+  background-color: #6070ffc2;
+  backdrop-filter: blur(3px);
   position: absolute;
   top: 0;
   left: 0;
@@ -86,24 +87,26 @@ a {
   right: 0;
   padding: 100px 0 0 30px;
   margin: 0;
-  
 }
 
-.nav-list.nav--open .nav__item a {
-  font-size: 36px;
-  color: #fff;
-  font-weight: 600;
-}
-.nav-list.nav--open .nav__item a:hover {
-  border-bottom: 3px solid #fff; 
-}
 .nav-list .nav__item a {
   border: 3px solid transparent;
   transition: all 0.5s linear;
 }
 
+.nav-list.nav--open .nav__item a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
 .nav-list .nav__item a:hover {
   border-bottom: 3px solid var(--primaryColor);
+}
+
+.nav-list.nav--open .nav__item a:hover {
+  border-bottom: 3px solid #fff;
 }
 
 .hero.hero--bg-img {
@@ -172,10 +175,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 0;
-  }
-
   .navbar {
     padding: 15px 7%;
     margin: 0;
@@ -194,6 +193,7 @@ a {
   }
 
   .header {
+    padding: 0;
     background-color: #fff;
     border-radius: 0 0 0 7rem;
   }
@@ -239,11 +239,10 @@ a {
 .work {
   padding: 16px;
   background: #fff;
-  border: 1px solid #dfe1e6;
+  border: 2px solid #dfe1e6;
   border-radius: 16px;
   margin: 0 auto;
   transition: all 0.4s linear;
-  border: 2px solid transparent;
 }
 
 .work:hover {

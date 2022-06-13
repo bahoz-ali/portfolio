@@ -14,12 +14,11 @@ menuButton.addEventListener("click", (event) => {
 xButton.addEventListener("click", closeMobileMenu);
 
 for (const item of navItems) {
-  item.addEventListener("click", closeMobileMenu)
+  item.addEventListener("click", closeMobileMenu);
 }
 
-
 function closeMobileMenu() {
-   nav_list.classList.remove("nav--open");
+  nav_list.classList.remove("nav--open");
   menuButton.classList.remove("menu--close");
   xButton.classList.remove("xopen");
   body.style.overflowY = "scroll";
