@@ -8,12 +8,15 @@ menuButton.addEventListener("click", (event) => {
   menuButton.style.display = "none";
 
   body.style.overflow = 'hidden';
+  xButton.classList.toggle("xopen");
 
-  if (xButton.style.display == "none") {
-    xButton.style.display = "block";
-  } else {
-    xButton.style.display = "none";
 
-  }
+  // if (xButton.style.display == "none") {
+  //   xButton.style.display = "block";
+  //   xButton.style.fontSize = "400px";
+  // } else {
+  //   xButton.style.display = "none";
+
+  // }
 
 });

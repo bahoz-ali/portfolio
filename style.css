@@ -57,6 +57,14 @@ a {
   display: none;
 }
 
+.bi-x-lg.xopen {
+  display: block;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .nav-list {
   display: none;
 }
