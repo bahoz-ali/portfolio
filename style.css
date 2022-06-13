@@ -53,6 +53,10 @@ a {
   cursor: pointer;
 }
 
+.menu.menu--close{
+  display: none;
+}
+
 .bi-x-lg {
   display: none;
 }
