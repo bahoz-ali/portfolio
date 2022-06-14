@@ -342,9 +342,19 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  /* padding: 10px 0 0 3px; */
   margin: 0;
   z-index: 10;
+}
+
+.overlay.overlay.overlay--active .work__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay.overlay.overlay--active #close--card1 {
+  color: #67798E;
+  font-size: 40px;
 }
 
 .btn {
