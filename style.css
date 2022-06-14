@@ -53,9 +53,42 @@ a {
   cursor: pointer;
 }
 
+.menu.menu--close {
+  display: none;
+}
+
+.bi-x-lg {
+  display: none;
+}
+
+.bi-x-lg.xopen {
+  display: block;
+  font-size: 20px;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .nav-list {
   display: none;
-  padding: 5px 3px;
+}
+
+.nav-list.nav--open {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 100px 0 0 30px;
+  margin: 0;
+  z-index: 10;
 }
 
 .nav-list .nav__item a {
@@ -63,8 +96,18 @@ a {
   transition: all 0.5s linear;
 }
 
+.nav-list.nav--open .nav__item a {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+}
+
 .nav-list .nav__item a:hover {
   border-bottom: 3px solid var(--primaryColor);
+}
+
+.nav-list.nav--open .nav__item a:hover {
+  border-bottom: 3px solid #fff;
 }
 
 .hero.hero--bg-img {
@@ -78,7 +121,6 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
   align-items: flex-start;
   padding: 100px 24px 24px 24px;
 }
@@ -133,10 +175,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 0;
-  }
-
   .navbar {
     padding: 15px 7%;
     margin: 0;
@@ -155,6 +193,7 @@ a {
   }
 
   .header {
+    padding: 0;
     background-color: #fff;
     border-radius: 0 0 0 7rem;
   }
@@ -200,11 +239,10 @@ a {
 .work {
   padding: 16px;
   background: #fff;
-  border: 1px solid #dfe1e6;
+  border: 2px solid #dfe1e6;
   border-radius: 16px;
   margin: 0 auto;
   transition: all 0.4s linear;
-  border: 2px solid transparent;
 }
 
 .work:hover {
