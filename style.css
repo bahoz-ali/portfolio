@@ -120,7 +120,6 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
   align-items: flex-start;
   padding: 100px 24px 24px 24px;
 }
