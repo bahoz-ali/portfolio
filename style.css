@@ -75,7 +75,6 @@ a {
 }
 
 .nav-list.nav--open {
-
   display: flex;
   gap: 40px;
   flex-direction: column;
