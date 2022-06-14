@@ -7,6 +7,7 @@ const hero = document.getElementsByClassName('hero')[0];
 const logo = document.getElementsByClassName('logo')[0];
 const card1 = document.getElementById('card1');
 const overlay = document.getElementsByClassName('overlay')[0];
+const close_card1 = document.getElementById('close--card1');
 
 function blur(number) {
   hero.style.filter = `blur(${number}px)`;
@@ -36,8 +37,13 @@ Array.from(navItems).forEach((item) => {
 });
 
 function openOverlay() {
-  console.log('open overlay');
   overlay.classList.add('overlay--active');
 }
 
 card1.addEventListener('click', openOverlay);
+
+function closeOverlay(){
+  overlay.classList.remove('overlay--active');
+}
+
+close_card1.addEventListener('click', closeOverlay);
