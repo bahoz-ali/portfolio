@@ -16,16 +16,5 @@
   "bugs": {
     "url": "https://github.com/bahoz-ali/portfolio/issues"
   },
-  "homepage": "https://github.com/bahoz-ali/portfolio#readme",
-  "devDependencies": {
-    "eslint": "^8.16.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  }
+  "homepage": "https://github.com/bahoz-ali/portfolio#readme"
 }
