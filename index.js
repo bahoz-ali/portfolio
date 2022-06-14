@@ -3,8 +3,16 @@ const navList = document.getElementsByClassName('nav-list')[0];
 const xButton = document.getElementsByClassName('bi-x-lg')[0];
 const navItems = document.getElementsByClassName('nav__item');
 const { body } = document;
+const hero = document.getElementsByClassName('hero')[0];
+const logo = document.getElementsByClassName('logo')[0];
+
+function blur(number) {
+  hero.style.filter = `blur(${number}px)`;
+  logo.style.filter = `blur(${number}px)`;
+}
 
 function closeMobileMenu() {
+  blur(0);
   navList.classList.remove('nav--open');
   menuButton.classList.remove('menu--close');
   xButton.classList.remove('xopen');
@@ -16,6 +24,7 @@ menuButton.addEventListener('click', () => {
   menuButton.classList.add('menu--close');
   body.style.overflow = 'hidden';
   xButton.classList.add('xopen');
+  blur(7);
 });
 
 xButton.addEventListener('click', closeMobileMenu);

@@ -75,18 +75,21 @@ a {
 }
 
 .nav-list.nav--open {
+
   display: flex;
+  gap: 40px;
   flex-direction: column;
   list-style-type: none;
-  background-color: #6070ffc2;
-  backdrop-filter: blur(3px);
-  position: absolute;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   padding: 100px 0 0 30px;
   margin: 0;
+  z-index: 10;
 }
 
 .nav-list .nav__item a {
@@ -95,10 +98,9 @@ a {
 }
 
 .nav-list.nav--open .nav__item a {
-  font-size: 30px;
+  font-size: 32px;
   color: #fff;
-  font-weight: 500;
-  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .nav-list .nav__item a:hover {
