@@ -37,12 +37,13 @@ Array.from(navItems).forEach((item) => {
 });
 
 function openOverlay() {
+  body.style.overflowY = 'hidden';
   overlay.classList.add('overlay--active');
 }
 
 card1.addEventListener('click', openOverlay);
 
-function closeOverlay(){
+function closeOverlay() {
   overlay.classList.remove('overlay--active');
 }
 

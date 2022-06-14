@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 :root {
   --primaryColor: #6070ff;
@@ -8,7 +8,7 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@ a {
 }
 
 .logo {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -111,7 +111,7 @@ a {
 }
 
 .hero.hero--bg-img {
-  background-image: url("/images/mobile.png");
+  background-image: url('/images/mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 718px;
@@ -133,7 +133,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -142,7 +142,7 @@ a {
 }
 
 .hero .hero__text {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -152,7 +152,7 @@ a {
 }
 
 .hero .hero__connect {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -206,7 +206,7 @@ a {
     padding: 10rem 5rem 10rem 8rem;
     margin: 0;
     text-align: center;
-    background-image: url("images/larg_bg@2x.png");
+    background-image: url('images/larg_bg@2x.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 60px;
@@ -342,18 +342,32 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  margin: 0;
+  margin: 0 auto;
   z-index: 10;
+  padding: 50px 0;
+  background: #c1c7d0;
+  /* mix-blend-mode: multiply; */
 }
 
-.overlay.overlay.overlay--active .work__title{
+.work--popup {
+  margin: 0 auto;
+  height: auto;
+  overflow-y: auto;
+
+  /* background-color: red; */
+}
+.work.work--popup .work__content p {
+  font-size: 15px;
+  margin-top: 12px;
+}
+.overlay.overlay.overlay--active .work__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .overlay.overlay.overlay--active #close--card1 {
-  color: #67798E;
+  color: #67798e;
   font-size: 40px;
 }
 
@@ -366,7 +380,7 @@ a {
   font-size: 17px;
   color: #396df2;
   border-radius: 8px;
-  font-family: "Poppins", "Courier New", Courier, monospace;
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
   transition: all 0.5s linear, color 0.2s linear;
 }
 
@@ -538,7 +552,7 @@ a {
 
 .contact-section .container {
   background-color: var(--primaryColor);
-  background-image: url("/images/contact_bg.png");
+  background-image: url('/images/contact_bg.png');
   background-position: 105% 0;
   background-size: contain;
   border-top-left-radius: 70px;
@@ -584,7 +598,7 @@ a {
 
 .contact-form .input {
   border-radius: 8px;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   border: 0;
   border: 1px solid #cfd8dc;
   color: #172b4d;
@@ -601,7 +615,7 @@ a {
   border: 1px solid #cfd8dc;
   color: #172b4d;
   font-size: 15px;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
