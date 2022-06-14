@@ -331,6 +331,27 @@ a {
   border-radius: 8px;
 }
 
+.overlay {
+  display: none;
+}
+
+.overlay.overlay--active {
+  display: flex;
+  /* gap: 40px; */
+  /* flex-direction: column; */
+  /* list-style-type: none; */
+  background-color: #6070ff;
+  /* mix-blend-mode: multiply; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 100px 0 0 30px;
+  margin: 0;
+  z-index: 10;
+}
+
 .btn {
   margin: 16px 0;
   padding: 12px;
