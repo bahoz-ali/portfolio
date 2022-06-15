@@ -58,16 +58,12 @@ card1.addEventListener('click', openOverlay);
 closeWindow.addEventListener('click', closeOverlay);
 
 // form validation
-const email = 'abcd123@gmail.com';
-
-function isEmailLowerCase(email) {
+function isEmailLowerCase(email = '') {
   const lowerCaseEmail = email.toLowerCase();
-  
-  if(email === lowerCaseEmail){
+
+  if (email === lowerCaseEmail && email.includes('@')) {
     return true;
   }
 
   return false;
 }
-
-isEmailLowerCase(email);
