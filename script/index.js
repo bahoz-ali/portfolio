@@ -57,17 +57,17 @@ function closeOverlay() {
 card1.addEventListener('click', openOverlay);
 closeWindow.addEventListener('click', closeOverlay);
 
-// form validation.
+// form validation
 const email = 'abcd123@gmail.com';
 
-function validateEmail(email) {
-  const convertedEmail = email.toLowerCase();
-  if(email === convertedEmail){
-    console.log("valid");
+function isEmailLowerCase(email) {
+  const lowerCaseEmail = email.toLowerCase();
+  
+  if(email === lowerCaseEmail){
+    return true;
   }
-  else {
-    console.log('not valid email address');
-  }
+
+  return false;
 }
 
-validateEmail(email);
+isEmailLowerCase(email);
