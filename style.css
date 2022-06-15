@@ -374,6 +374,10 @@ a {
   font-size: 40px;
 }
 
+.work__usage .group2 {
+  display: none;
+}
+
 .buttons {
   display: flex;
   align-items: stretch;
@@ -462,6 +466,44 @@ a {
 
   .work .work__title .title {
     font-size: 40px;
+  }
+
+  /* for popup card */
+  .work--popup.work {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 24px;
+    width: 80%;
+  }
+
+  .work .work__info p {
+    font-size: 15px;
+  }
+
+  .work--popup.work .work__img img {
+    width: 98%;
+    margin-bottom: 30px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+
+  .work.work--popup .work__content p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .work--popup.work .work__usage {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+
+  .work__usage .group2 {
+    display: block;
   }
 }
 

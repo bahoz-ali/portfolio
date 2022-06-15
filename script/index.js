@@ -61,9 +61,7 @@ closeWindow.addEventListener('click', closeOverlay);
 function isEmailLowerCase(email = '') {
   const lowerCaseEmail = email.toLowerCase();
 
-  if (email === lowerCaseEmail && email.includes('@')) {
-    return true;
-  }
+  if (email === lowerCaseEmail && email.includes('@')) return true;
 
   return false;
 }
