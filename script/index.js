@@ -56,12 +56,3 @@ function closeOverlay() {
 
 card1.addEventListener('click', openOverlay);
 closeWindow.addEventListener('click', closeOverlay);
-
-// form validation
-function isEmailLowerCase(email = '') {
-  const lowerCaseEmail = email.toLowerCase();
-
-  if (email === lowerCaseEmail && email.includes('@')) return true;
-
-  return false;
-}

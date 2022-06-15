@@ -473,7 +473,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     padding: 24px;
-    width: 80%;
+    width: 90%;
   }
 
   .work .work__info p {
@@ -487,18 +487,20 @@ a {
 
   .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 30px;
   }
 
+ 
   .work.work--popup .work__content p {
     font-size: 16px;
     line-height: 30px;
+    max-width: fit-content;
   }
 
   .work--popup.work .work__usage {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: min-content max-content min-content;
     gap: 10px;
   }
 
