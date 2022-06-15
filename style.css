@@ -333,13 +333,10 @@ a {
 
 .overlay {
   display: none;
-}
-
-.overlay.overlay--active {
-  display: flex;
   align-items: start;
   position: fixed;
   width: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   bottom: 0;
@@ -348,9 +345,14 @@ a {
   z-index: 10;
   padding: 50px 0;
   background: #c1c7d0e5;
+  overflow-y: auto;
 }
 
-.overlay .work--popup.work {
+.overlay.overlay--active {
+  display: flex;
+}
+
+.overlay .work--popup {
   margin: 0 auto;
   height: auto;
   overflow-y: auto;
@@ -361,15 +363,41 @@ a {
   margin-top: 12px;
 }
 
-.overlay.overlay.overlay--active .work__title {
+.work--popup .work__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.overlay.overlay.overlay--active #close--card1 {
+.work--popup .close_window {
   color: #67798e;
   font-size: 40px;
+}
+
+.buttons {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  justify-content: start;
+}
+
+.work--popup .btn a {
+  color: var(--primaryColor);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work--popup .btn:hover {
+  background: #161722;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  cursor: pointer;
+}
+
+.work--popup .btn:active {
+  background-color: #161722;
+  color: #fff;
 }
 
 .btn {

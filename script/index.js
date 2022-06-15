@@ -7,7 +7,7 @@ const hero = document.getElementsByClassName('hero')[0];
 const logo = document.getElementsByClassName('logo')[0];
 const card1 = document.getElementById('card1');
 const overlay = document.getElementsByClassName('overlay')[0];
-const closeCard1 = document.getElementById('close--card1');
+const closeWindow = document.getElementsByClassName('close_window')[0];
 
 function stopScroll() {
   body.style.overflowY = 'hidden';
@@ -55,4 +55,4 @@ function closeOverlay() {
 }
 
 card1.addEventListener('click', openOverlay);
-closeCard1.addEventListener('click', closeOverlay);
+closeWindow.addEventListener('click', closeOverlay);

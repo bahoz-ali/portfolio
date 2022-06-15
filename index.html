@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ---------- Header section ---------- -->
     <header class="header">
       <nav class="navbar">
         <div class="logo">BZ.</div>
@@ -68,7 +69,9 @@
       </section>
     </header>
 
+    <!-- ---------- Work section ---------- -->
     <section class="work-section">
+      <!-- ---------- Work 1 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work1.png" alt="first-project" />
@@ -102,57 +105,9 @@
 
           <button type="button" class="btn" id="card1">See Project</button>
         </div>
-
-        <div class="overlay">
-          <div class="work work--popup">
-            <div class="work__title">
-              <h1 class="title">Tonic</h1>
-              <i class="bi bi-x" id="close--card1"></i>
-            </div>
-
-            <div class="work__info">
-              <p class="info__name">CANOPY</p>
-              <div class="circle"></div>
-              <p class="info__job">Back End Dev</p>
-              <div class="circle"></div>
-              <p class="info__year">2015</p>
-            </div>
-
-            <div class="work__img">
-              <img src="./images/works/work1.png" alt="first-project" />
-            </div>
-
-            <div class="work__content">
-              <p class="content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essent
-              </p>
-            </div>
-
-            <ul class="work__usage">
-              <li class="usage_item">html</li>
-              <li class="usage_item">css</li>
-              <li class="usage_item">javascript</li>
-            </ul>
-
-            <button type="button" class="btn">
-              <a href="#"
-                >see live <img src="./images/live.png" alt="live icon"
-              /></a>
-            </button>
-            <button type="button" class="btn">
-              <a href="#"
-                >see source <img src="./images/github1.png" alt="github icon"
-              /></a>
-            </button>
-          </div>
-        </div>
       </div>
 
+      <!-- ---------- Work 2 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work2.png" alt="second-project" />
@@ -188,6 +143,7 @@
         </div>
       </div>
 
+      <!-- ---------- Work 3 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work3.png" alt="third-project" />
@@ -223,6 +179,7 @@
         </div>
       </div>
 
+      <!-- ---------- Work 2 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work4.png" alt="fouth-project" />
@@ -259,6 +216,7 @@
       </div>
     </section>
 
+    <!-- ---------- About section ---------- -->
     <section id="about" class="about-section">
       <div class="hero">
         <div class="hero__title">
@@ -297,6 +255,7 @@
         <button type="button" class="btn">Get my resume</button>
       </div>
 
+    <!-- ---------- Skills and categories ---------- -->
       <ul class="category-list">
         <li class="category-item category-item--open">
           <div class="category__header">
@@ -354,6 +313,7 @@
       </ul>
     </section>
 
+    <!-- ---------- Contact section ---------- -->
     <footer id="contact" class="contact-section">
       <div class="container">
         <div class="contact">
@@ -410,6 +370,58 @@
         </div>
       </div>
     </footer>
+
+    <!-- General work popup card -->
+    <div class="overlay">
+      <div class="work work--popup">
+        <div class="work__title">
+          <h1 class="title">Tonic</h1>
+          <i class="bi bi-x close_window"></i>
+        </div>
+
+        <div class="work__info">
+          <p class="info__name">CANOPY</p>
+          <div class="circle"></div>
+          <p class="info__job">Back End Dev</p>
+          <div class="circle"></div>
+          <p class="info__year">2015</p>
+        </div>
+
+        <div class="work__img">
+          <img src="./images/works/work1.png" alt="first-project" />
+        </div>
+
+        <div class="work__content">
+          <p class="content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essent
+          </p>
+        </div>
+
+        <ul class="work__usage">
+          <li class="usage_item">html</li>
+          <li class="usage_item">css</li>
+          <li class="usage_item">javascript</li>
+        </ul>
+
+        <div class="buttons">
+          <button type="button" class="btn">
+            <a href="#"
+              >see live <img src="./images/live.png" alt="live icon"
+            /></a>
+          </button>
+          <button type="button" class="btn">
+            <a href="#"
+              >see source <img src="./images/github1.png" alt="github icon"
+            /></a>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="./script/index.js"></script>
   </body>
