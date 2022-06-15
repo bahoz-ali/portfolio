@@ -56,3 +56,5 @@ function closeOverlay() {
 
 card1.addEventListener('click', openOverlay);
 closeWindow.addEventListener('click', closeOverlay);
+
+// form validation.
