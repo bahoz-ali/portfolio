@@ -338,6 +338,7 @@ a {
 .overlay.overlay--active {
   display: flex;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -345,21 +346,20 @@ a {
   margin: 0 auto;
   z-index: 10;
   padding: 50px 0;
-  background: #c1c7d0;
-  /* mix-blend-mode: multiply; */
+  background: #c1c7d0e5;
 }
 
-.work--popup {
+.overlay .work--popup.work {
   margin: 0 auto;
   height: auto;
   overflow-y: auto;
-
-  /* background-color: red; */
 }
+
 .work.work--popup .work__content p {
   font-size: 15px;
   margin-top: 12px;
 }
+
 .overlay.overlay.overlay--active .work__title {
   display: flex;
   justify-content: space-between;

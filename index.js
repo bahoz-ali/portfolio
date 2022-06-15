@@ -7,7 +7,15 @@ const hero = document.getElementsByClassName('hero')[0];
 const logo = document.getElementsByClassName('logo')[0];
 const card1 = document.getElementById('card1');
 const overlay = document.getElementsByClassName('overlay')[0];
-const close_card1 = document.getElementById('close--card1');
+const closeCard1 = document.getElementById('close--card1');
+
+function stopScroll() {
+  body.style.overflowY = 'hidden';
+}
+
+function enableScroll() {
+  body.style.overflowY = 'auto';
+}
 
 function blur(number) {
   hero.style.filter = `blur(${number}px)`;
@@ -19,13 +27,13 @@ function closeMobileMenu() {
   navList.classList.remove('nav--open');
   menuButton.classList.remove('menu--close');
   xButton.classList.remove('xopen');
-  body.style.overflowY = 'scroll';
+  enableScroll();
 }
 
 menuButton.addEventListener('click', () => {
   navList.classList.add('nav--open');
   menuButton.classList.add('menu--close');
-  body.style.overflow = 'hidden';
+  stopScroll();
   xButton.classList.add('xopen');
   blur(7);
 });
@@ -37,14 +45,14 @@ Array.from(navItems).forEach((item) => {
 });
 
 function openOverlay() {
-  body.style.overflowY = 'hidden';
+  stopScroll();
   overlay.classList.add('overlay--active');
 }
 
-card1.addEventListener('click', openOverlay);
-
 function closeOverlay() {
+  enableScroll();
   overlay.classList.remove('overlay--active');
 }
 
-close_card1.addEventListener('click', closeOverlay);
+card1.addEventListener('click', openOverlay);
+closeCard1.addEventListener('click', closeOverlay);
