@@ -337,6 +337,7 @@ a {
 
 .overlay.overlay--active {
   display: flex;
+  align-items: start;
   position: fixed;
   width: 100%;
   top: 0;
