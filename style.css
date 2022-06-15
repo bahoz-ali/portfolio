@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 :root {
@@ -372,6 +374,7 @@ a {
 .work--popup .close_window {
   color: #67798e;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .work__usage .group2 {
@@ -491,11 +494,9 @@ a {
     gap: 30px;
   }
 
- 
   .work.work--popup .work__content p {
     font-size: 16px;
     line-height: 30px;
-    max-width: fit-content;
   }
 
   .work--popup.work .work__usage {
