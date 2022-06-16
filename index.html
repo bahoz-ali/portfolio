@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ---------- Header section ---------- -->
     <header class="header">
       <nav class="navbar">
         <div class="logo">BZ.</div>
         <img id="menu" src="./images/Union.png" class="menu" alt="menu icon" />
         <i class="bi bi-x-lg"></i>
-        <ul class="nav-list ">
+        <ul class="nav-list">
           <li class="nav__item"><a href="#">Portfolio</a></li>
           <li class="nav__item"><a href="#about">About</a></li>
           <li class="nav__item"><a href="#contact">Contact</a></li>
@@ -68,7 +69,9 @@
       </section>
     </header>
 
+    <!-- ---------- Work section ---------- -->
     <section class="work-section">
+      <!-- ---------- Work 1 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work1.png" alt="first-project" />
@@ -100,10 +103,13 @@
             <li class="usage_item">javascript</li>
           </ul>
 
-          <button type="button" class="btn">See Project</button>
+          <button type="button" data-id="0" class="btn see_project">
+            See Project
+          </button>
         </div>
       </div>
 
+      <!-- ---------- Work 2 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work2.png" alt="second-project" />
@@ -135,10 +141,13 @@
             <li class="usage_item">javascript</li>
           </ul>
 
-          <button type="button" class="btn">See Project</button>
+          <button type="button" data-id="1" class="btn see_project">
+            See Project
+          </button>
         </div>
       </div>
 
+      <!-- ---------- Work 3 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work3.png" alt="third-project" />
@@ -170,10 +179,13 @@
             <li class="usage_item">javascript</li>
           </ul>
 
-          <button type="button" class="btn">See Project</button>
+          <button type="button" data-id="2" class="btn see_project">
+            See Project
+          </button>
         </div>
       </div>
 
+      <!-- ---------- Work 4 ---------- -->
       <div class="work">
         <div class="work__img">
           <img src="./images/works/work4.png" alt="fouth-project" />
@@ -205,11 +217,14 @@
             <li class="usage_item">javascript</li>
           </ul>
 
-          <button type="button" class="btn">See Project</button>
+          <button type="button" data-id="3" class="btn see_project">
+            See Project
+          </button>
         </div>
       </div>
     </section>
 
+    <!-- ---------- About section ---------- -->
     <section id="about" class="about-section">
       <div class="hero">
         <div class="hero__title">
@@ -248,6 +263,7 @@
         <button type="button" class="btn">Get my resume</button>
       </div>
 
+      <!-- ---------- Skills and categories ---------- -->
       <ul class="category-list">
         <li class="category-item category-item--open">
           <div class="category__header">
@@ -303,9 +319,9 @@
           </div>
         </li>
       </ul>
-
     </section>
 
+    <!-- ---------- Contact section ---------- -->
     <footer id="contact" class="contact-section">
       <div class="container">
         <div class="contact">
@@ -363,6 +379,74 @@
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <!-- General work popup card -->
+    <div class="overlay">
+      <div class="work work--popup">
+        <div class="work__title">
+          <h1 class="title">Tonic</h1>
+          <i class="bi bi-x close_window"></i>
+        </div>
+
+        <div class="work__info">
+          <p class="info__name">CANOPY</p>
+          <div class="circle"></div>
+          <p class="info__job">Back End Dev</p>
+          <div class="circle"></div>
+          <p class="info__year">2015</p>
+        </div>
+
+        <div class="work__img">
+          <img
+            id="img_mobile"
+            src="./images/works/work1.png"
+            alt="first-project"
+          />
+          <img
+            id="img_large"
+            src="./images/popup_cards/work1-lg.png"
+            alt="first-project"
+          />
+        </div>
+
+        <div class="grid col-2">
+          <div class="work__content">
+            <p class="content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+          </div>
+
+          <div>
+            <ul class="work__usage">
+              <li class="usage_item group1">html</li>
+              <li class="usage_item group1">css</li>
+              <li class="usage_item group1">javascript</li>
+              <li class="usage_item group2">github</li>
+              <li class="usage_item group2">ruby</li>
+              <li class="usage_item group2">bootstrap</li>
+            </ul>
+
+            <div class="buttons">
+              <button type="button" class="btn">
+                <a href="#" id="projectLive"
+                  >see live <img src="./images/live.png" alt="live icon"
+                /></a>
+              </button>
+              <button type="button" class="btn">
+                <a href="#" id="sourceCode"
+                  >see source <img src="./images/github1.png" alt="github icon"
+                /></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
