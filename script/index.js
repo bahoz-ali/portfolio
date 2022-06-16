@@ -182,7 +182,6 @@ async function handleSubmit(event) {
   } catch (error) {
     formStatus.classList.add('invalid');
     formStatus.innerHTML = 'Oops!, Email should be in lower case and valid';
-    console.log(error);
     formStatus.innerHTML = 'Oops! There was a problem submitting your form';
   }
 
