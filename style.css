@@ -497,6 +497,7 @@ a {
   .work.work--popup .work__content p {
     font-size: 16px;
     line-height: 30px;
+    max-width: none;
   }
 
   .work--popup.work .work__usage {
