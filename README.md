@@ -6,8 +6,8 @@
 
 ![screen shot of my project](./images/screenshots/screenshot.png)
 ![screen shot of my project](./images/screenshots/screenshot1.png)
-![screen shot of my project](./images/screenshots/screenshot2.png)
 ![screen shot of my project](./images/screenshots/screenshot4.png)
+![screen shot of my project](./images/screenshots/screenshot2.png)
 
 ## Built With
 

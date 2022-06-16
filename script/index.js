@@ -7,6 +7,9 @@ const logo = document.getElementsByClassName('logo')[0];
 const overlay = document.getElementsByClassName('overlay')[0];
 const closeWindow = document.getElementsByClassName('close_window')[0];
 const lookProjectButtons = document.querySelectorAll('.see_project');
+const emailInput = document.getElementById('email');
+const form = document.getElementById('contact-form');
+const formStatus = document.getElementById('form_status');
 
 const projects = [
   {
@@ -84,13 +87,15 @@ function closeMobileMenu() {
   enableScroll();
 }
 
-menuButton.addEventListener('click', () => {
+function openMenu() {
   navList.classList.add('nav--open');
   menuButton.classList.add('menu--close');
   stopScroll();
   xButton.classList.add('xopen');
   blur(7);
-});
+}
+
+menuButton.addEventListener('click', openMenu);
 
 xButton.addEventListener('click', closeMobileMenu);
 
@@ -147,3 +152,45 @@ function isEmailLowerCase(email = '') {
 
   return false;
 }
+
+async function sendData(event) {
+  const data = new FormData(event.target);
+  const response = await fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: { Accept: 'application/json' },
+  });
+
+  return response;
+}
+
+async function handleSubmit(event) {
+  event.preventDefault();
+
+  try {
+    const response = await sendData(event);
+
+    if (response.ok && isEmailLowerCase(emailInput.value)) {
+      formStatus.innerHTML = 'Thanks for your submission!';
+      formStatus.classList.remove('invalid');
+      formStatus.classList.add('valid');
+      form.reset();
+    } else {
+      formStatus.classList.add('invalid');
+      formStatus.innerHTML = 'Oops!, Email should be in lower case and valid';
+    }
+  } catch (error) {
+    formStatus.classList.add('invalid');
+    formStatus.innerHTML = 'Oops!, Email should be in lower case and valid';
+    console.log(error);
+    formStatus.innerHTML = 'Oops! There was a problem submitting your form';
+  }
+
+  // removing the information after 5 second.
+  setTimeout(() => {
+    formStatus.innerHTML = '';
+    formStatus.classList.remove('invalid', 'valid');
+  }, 5000);
+}
+
+form.addEventListener('submit', handleSubmit);

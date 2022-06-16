@@ -336,6 +336,7 @@
 
           <form
             class="contact-form"
+            id="contact-form"
             action="https://formspree.io/f/xzbooylo"
             method="post"
           >
@@ -373,13 +374,16 @@
               placeholder="Write your message here..."
             ></textarea>
 
-            <button class="btn" type="submit">Get it Touch</button>
+            <button class="btn" id="submit_form" type="submit">
+              Get it Touch
+            </button>
+            <p id="form_status"></p>
           </form>
         </div>
       </div>
     </footer>
 
-    <!-- General work popup card -->
+    <!-- General work popup card, please be careful this is dynamic card i use js to change the content of this card -->
     <div class="overlay">
       <div class="work work--popup">
         <div class="work__title">

@@ -714,11 +714,30 @@ a {
 .contact-form .btn {
   color: var(--primaryColor);
   margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .contact-form .btn:hover {
   background-color: var(--primaryColor);
   color: #fff;
+}
+
+.contact-form #form_status {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+  color: #162539;
+}
+
+#form_status.valid {
+  background-color: #eafaf1;
+  border: 1px solid #31b370;
+}
+
+#form_status.invalid {
+  background-color: #fceae9;
+  border: 1px solid #E74C3C;
 }
 
 @media screen and (min-width: 768px) {
