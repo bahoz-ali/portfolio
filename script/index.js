@@ -8,6 +8,8 @@ const overlay = document.getElementsByClassName('overlay')[0];
 const closeWindow = document.getElementsByClassName('close_window')[0];
 const lookProjectButtons = document.querySelectorAll('.see_project');
 const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const nameInput = document.getElementById('name');
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form_status');
 
@@ -193,3 +195,47 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener('submit', handleSubmit);
+
+// local storage
+function setData(data) {
+  localStorage.setItem('userData', JSON.stringify(data));
+}
+
+function getData(key = 'userData') {
+  return JSON.parse(localStorage.getItem(key));
+}
+
+function init() {
+  if (!getData('userData')) {
+    const data = { name: '', email: '', message: '' };
+    setData(data);
+  }
+}
+
+function fillForm() {
+  if (getData('userData')) {
+    const { name, email, message } = getData('userData');
+
+    nameInput.value = name;
+    emailInput.value = email;
+    messageInput.innerText = message;
+  }
+}
+
+function handleChange(event) {
+  const { name, value } = event.target;
+
+  const data = getData('userData');
+  data[name] = value;
+
+  setData(data);
+}
+
+emailInput.addEventListener('change', handleChange);
+nameInput.addEventListener('change', handleChange);
+messageInput.addEventListener('change', handleChange);
+
+document.addEventListener('DOMContentLoaded', () => {
+  init();
+  fillForm();
+});
