@@ -8,6 +8,8 @@ const overlay = document.getElementsByClassName('overlay')[0];
 const closeWindow = document.getElementsByClassName('close_window')[0];
 const lookProjectButtons = document.querySelectorAll('.see_project');
 const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const nameInput = document.getElementById('name');
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form_status');
 
@@ -193,3 +195,5 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener('submit', handleSubmit);
+
+// local storage
