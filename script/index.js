@@ -197,23 +197,45 @@ async function handleSubmit(event) {
 form.addEventListener('submit', handleSubmit);
 
 // local storage
-function saveToLocalStorage(obj) {
-  const dataString = JSON.stringify(obj);
-  localStorage.setItem('userdata', dataString);
+function setData(data) {
+  localStorage.setItem('userData', JSON.stringify(data));
 }
 
-function getData(key) {
+function getData(key = 'userData') {
   return JSON.parse(localStorage.getItem(key));
 }
 
-function fillFormWithStoredData(storedData) {
-  userName.setAttribute('value', storedData.name);
-  userEmail.setAttribute('value', storedData.email);
-  userMessage.innerHTML = storedData.message;
+function init() {
+  if (!getData('userData')) {
+    const data = { name: '', email: '', message: '' };
+    setData(data);
+  }
 }
 
-const dataobject = {
-  name: nameInput.value,
-  email: emailInput.value,
-  message: messageInput.value,
-};
+function fillForm() {
+  if (getData('userData')) {
+    const { name, email, message } = getData('userData');
+
+    nameInput.value = name;
+    emailInput.value = email;
+    messageInput.innerText = message;
+  }
+}
+
+function handleChange(event) {
+  const { name, value } = event.target;
+
+  const data = getData('userData');
+  data[name] = value;
+
+  setData(data);
+}
+
+emailInput.addEventListener('change', handleChange);
+nameInput.addEventListener('change', handleChange);
+messageInput.addEventListener('change', handleChange);
+
+document.addEventListener('DOMContentLoaded', () => {
+  init();
+  fillForm();
+});
