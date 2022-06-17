@@ -202,7 +202,7 @@ function setData(data) {
 }
 
 function getData(key = 'userData') {
-  return JSON.parse(localStorage.getItem(key));
+  return localStorage.getItem(key);
 }
 
 function init() {
