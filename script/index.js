@@ -197,3 +197,23 @@ async function handleSubmit(event) {
 form.addEventListener('submit', handleSubmit);
 
 // local storage
+function saveToLocalStorage(obj) {
+  const dataString = JSON.stringify(obj);
+  localStorage.setItem('userdata', dataString);
+}
+
+function getData(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
+function fillFormWithStoredData(storedData) {
+  userName.setAttribute('value', storedData.name);
+  userEmail.setAttribute('value', storedData.email);
+  userMessage.innerHTML = storedData.message;
+}
+
+const dataobject = {
+  name: nameInput.value,
+  email: emailInput.value,
+  message: messageInput.value,
+};
